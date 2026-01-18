@@ -1,0 +1,9 @@
+{
+  "model_name": "lstm",
+  "train": {
+    "epochs": 1,
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "device": "cuda"
+  }
+}

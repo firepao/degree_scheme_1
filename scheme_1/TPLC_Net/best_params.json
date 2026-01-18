@@ -1,0 +1,7 @@
+{
+    "hidden_dim": 32,
+    "top_k_periods": 4,
+    "num_scales": 1,
+    "lr": 0.0021917487185572782,
+    "weight_decay": 0.0008921795677048455
+}

@@ -1,0 +1,1 @@
+D:\degree_code\scheme_1\compare_result\compare_tplc_lstm_timesnet_patchtst_AICU_v3_20260113_150224\lstm\checkpoints\best.pt

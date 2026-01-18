@@ -1,0 +1,56 @@
+{
+  "team": ".",
+  "dataset_root": "D:\\学位会\\数据集\\温室环境数据(4万条)",
+  "seq_len": 96,
+  "pred_len": 24,
+  "stride": 1,
+  "feature_cols": [
+    "CO2air",
+    "EnScr",
+    "HumDef",
+    "PipeGrow",
+    "Rhair",
+    "Tair",
+    "Tot_PAR",
+    "VentLee",
+    "Ventwind",
+    "water_sup"
+  ],
+  "target_cols": [
+    "Tair",
+    "Rhair",
+    "CO2air"
+  ],
+  "model": {
+    "num_scales": 1,
+    "top_k_periods": 4,
+    "hidden_dim": 32
+  },
+  "train": {
+    "batch_size": 32,
+    "epochs": 20,
+    "lr": 0.0021917487185572782,
+    "weight_decay": 0.0008921795677048455,
+    "device": "cuda",
+    "use_amp": true,
+    "grad_clip_max_norm": 1.0,
+    "lr_scheduler": "plateau",
+    "plateau_patience": 3,
+    "plateau_factor": 0.5,
+    "early_stop_patience": 6,
+    "early_stop_min_delta": 0.0,
+    "min_lr": 0.0
+  },
+  "tuning": {
+    "enabled": true,
+    "best_params": {
+      "hidden_dim": 32,
+      "top_k_periods": 4,
+      "num_scales": 1,
+      "lr": 0.0021917487185572782,
+      "weight_decay": 0.0008921795677048455
+    },
+    "tuner_run_dir": "D:\\degree_code\\scheme_1\\TPLC_Net\\tuner_logs\\tplcnet_greenhouse_20260107_173022",
+    "trial_epochs": 8
+  }
+}

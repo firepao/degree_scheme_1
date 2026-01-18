@@ -1,0 +1,38 @@
+{
+  "exp_name": "tplcnet_tuning_AICU",
+  "max_trials": 10,
+  "base_seed": 42,
+  "device": "cuda",
+  "search_space": {
+    "hidden_dim": [
+      32,
+      64,
+      96,
+      128
+    ],
+    "num_scales": [
+      1,
+      2,
+      3
+    ],
+    "top_k_periods": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "lr": [
+      0.0001,
+      0.003,
+      "float"
+    ],
+    "weight_decay": [
+      0.0,
+      0.01,
+      "float"
+    ]
+  },
+  "fixed_train_cfg": {
+    "epochs": 2
+  }
+}

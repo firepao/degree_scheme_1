@@ -1,0 +1,19 @@
+{
+  "model_name": "patchtst",
+  "train": {
+    "epochs": 20,
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "device": "cuda",
+    "grad_clip_max_norm": 1.0,
+    "use_amp": false,
+    "lr_scheduler": "plateau",
+    "early_stop_patience": 6
+  },
+  "patchtst_arch": {
+    "d_model": 128,
+    "e_layers": 2,
+    "patch_len": 16,
+    "stride": 8
+  }
+}

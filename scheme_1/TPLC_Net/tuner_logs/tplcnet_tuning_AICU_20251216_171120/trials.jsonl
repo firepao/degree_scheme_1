@@ -1,0 +1,2 @@
+{"trial_id": 0, "seed": 42, "params": {"hidden_dim": 32, "num_scales": 1, "top_k_periods": 4, "lr": 0.0008101863760300812, "weight_decay": 0.001395379285251439}, "val": {"loss": 0.7086024794258216, "mae": 0.6852546616448344, "rmse": 0.8037730790834787}}
+{"trial_id": 1, "seed": 43, "params": {"hidden_dim": 32, "num_scales": 3, "top_k_periods": 2, "lr": 0.0018124282861022153, "weight_decay": 0.00031782679481783595}, "val": {"loss": 0.35387248394716325, "mae": 0.44611561119731696, "rmse": 0.558941871204195}}

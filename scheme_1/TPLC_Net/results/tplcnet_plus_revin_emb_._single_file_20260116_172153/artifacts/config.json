@@ -1,0 +1,38 @@
+{
+  "team": ".",
+  "dataset_root": "D:\\学位会\\数据集\\温室环境数据(4万条)",
+  "seq_len": 96,
+  "pred_len": 24,
+  "stride": 1,
+  "feature_cols": [
+    "CO2air",
+    "EnScr",
+    "HumDef",
+    "PipeGrow",
+    "Rhair",
+    "Tair",
+    "Tot_PAR",
+    "VentLee",
+    "Ventwind",
+    "water_sup"
+  ],
+  "target_cols": [
+    "Tair",
+    "Rhair",
+    "CO2air"
+  ],
+  "model": {
+    "num_scales": 1,
+    "top_k_periods": 2,
+    "hidden_dim": 64,
+    "note": "TPLCNet_Improved with RevIN and Embedding"
+  },
+  "train": {
+    "batch_size": 32,
+    "epochs": 20,
+    "lr": 0.0022453484874705673,
+    "weight_decay": 0.0003402505165179919,
+    "device": "cuda",
+    "use_amp": true
+  }
+}

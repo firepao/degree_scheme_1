@@ -1,0 +1,56 @@
+{
+  "team": "AICU",
+  "dataset_root": "D:\\degree_code\\scheme_1\\datasets\\自主温室挑战赛",
+  "seq_len": 288,
+  "pred_len": 72,
+  "stride": 1,
+  "feature_cols": [
+    "CO2air",
+    "EnScr",
+    "HumDef",
+    "PipeGrow",
+    "Rhair",
+    "Tair",
+    "Tot_PAR",
+    "VentLee",
+    "Ventwind",
+    "water_sup"
+  ],
+  "target_cols": [
+    "Tair",
+    "Rhair",
+    "CO2air"
+  ],
+  "model": {
+    "num_scales": 1,
+    "top_k_periods": 2,
+    "hidden_dim": 96
+  },
+  "train": {
+    "batch_size": 32,
+    "epochs": 20,
+    "lr": 0.002353876249399582,
+    "weight_decay": 0.0002448918538034762,
+    "device": "cuda",
+    "use_amp": true,
+    "grad_clip_max_norm": 1.0,
+    "lr_scheduler": "plateau",
+    "plateau_patience": 3,
+    "plateau_factor": 0.5,
+    "early_stop_patience": 6,
+    "early_stop_min_delta": 0.0,
+    "min_lr": 0.0
+  },
+  "tuning": {
+    "enabled": true,
+    "best_params": {
+      "hidden_dim": 96,
+      "top_k_periods": 2,
+      "num_scales": 1,
+      "lr": 0.002353876249399582,
+      "weight_decay": 0.0002448918538034762
+    },
+    "tuner_run_dir": "D:\\degree_code\\scheme_1\\TPLC_Net\\tuner_logs\\tplcnet_greenhouse_20251223_205449",
+    "trial_epochs": 8
+  }
+}

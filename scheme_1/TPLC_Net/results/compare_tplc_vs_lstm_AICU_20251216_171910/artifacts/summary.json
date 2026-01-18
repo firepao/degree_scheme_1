@@ -1,0 +1,64 @@
+{
+  "team": "AICU",
+  "dataset_root": "D:\\degree_code\\scheme_1\\datasets\\自主温室挑战赛",
+  "seq_len": 288,
+  "pred_len": 72,
+  "stride": 1,
+  "batch_size": 8,
+  "epochs": 1,
+  "lr": 0.001,
+  "weight_decay": 0.0,
+  "device": "cuda",
+  "tplc_tuning": {
+    "enabled": true,
+    "tuner_dir": "D:\\degree_code\\scheme_1\\TPLC_Net\\tuner_logs\\tplcnet_tuning_AICU_20251216_171911",
+    "trials": 1,
+    "trial_epochs": 1
+  },
+  "models": {
+    "tplcnet": {
+      "history": {
+        "train_loss": [
+          0.21893443273080612
+        ],
+        "val_loss": [
+          0.8982674387401381
+        ],
+        "val_mae": [
+          0.7368381573209609
+        ],
+        "val_rmse": [
+          0.8964132430245504
+        ]
+      },
+      "metrics": {
+        "loss": 851.4044382473351,
+        "mae": 4.6462475972453285,
+        "rmse": 5.48634997534783
+      },
+      "model_dir": "D:\\degree_code\\scheme_1\\TPLC_Net\\results\\compare_tplc_vs_lstm_AICU_20251216_171910\\tplcnet"
+    },
+    "lstm": {
+      "history": {
+        "train_loss": [
+          0.19126865886504693
+        ],
+        "val_loss": [
+          0.3337894790961553
+        ],
+        "val_mae": [
+          0.40819468468029935
+        ],
+        "val_rmse": [
+          0.5233425512839108
+        ]
+      },
+      "metrics": {
+        "loss": 2.1910422728929193,
+        "mae": 1.0527134554922866,
+        "rmse": 1.2843764602024106
+      },
+      "model_dir": "D:\\degree_code\\scheme_1\\TPLC_Net\\results\\compare_tplc_vs_lstm_AICU_20251216_171910\\lstm"
+    }
+  }
+}

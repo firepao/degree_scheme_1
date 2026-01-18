@@ -1,0 +1,201 @@
+{
+  "main": {
+    "id": "652bd9d7c7349b02",
+    "type": "split",
+    "children": [
+      {
+        "id": "459d281b3e75467f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "61d629b781ca4a7e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "scheml_1_final/scheme_1_algo.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "scheme_1_algo"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8e71c5c117b0581a",
+    "type": "split",
+    "children": [
+      {
+        "id": "804dbd187d83a521",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c2438d2f093f191e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "9c85fc52be7cd558",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "3bff4da080cda81a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "67fd0a65cb11ab64",
+    "type": "split",
+    "children": [
+      {
+        "id": "11ff5983054d5d10",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "40cb9aa859473785",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "scheml_1_final/scheme_1_algo.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "scheme_1_algo 的反向链接列表"
+            }
+          },
+          {
+            "id": "d22502dbfe3dacd9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "scheml_1_final/scheme_1_algo.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "scheme_1_algo 的出链列表"
+            }
+          },
+          {
+            "id": "a8d1be4573f566bc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "0517aae6a80bc17a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "d3ac27011c0faa49",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "scheml_1_final/scheme_1_algo.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "scheme_1_algo 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "61d629b781ca4a7e",
+  "lastOpenFiles": [
+    "scheml_1_final/images/76b5ce14c742b8d20e1c9b4d8c4acff0167be6a68bb7018327892c14e01deb35.jpg",
+    "scheml_1_final/images/309bb67665320be91b90492ca56097ce193a1400ec60acf82769c1f99c1143df.jpg",
+    "scheml_1_final/images/854df721fa6954b6e9c1310312ea2e8a8daa4a1ee2483b83a68a390706f6d998.jpg",
+    "scheml_1_final/images/935cbe9adb714b32273eeed73b62da61aa0edbd36e0aaf691beee80d96dca2b1.jpg",
+    "scheml_1_final/images/7365ad3431ec0b04001093f828f50d6fc7823a0a05f8b98c2527f2d5a79c7da1.jpg",
+    "scheml_1_final/images/293835afdfe03fef824906bda488fff6003da7fb4c255811a1c8dce094c36680.jpg",
+    "scheml_1_final/images/a23fbb67fb14c5ed9715d1150f542170fa425bfcc46b090b93de491f9d22bbf8.jpg",
+    "scheml_1_final/images/c9dc3ca40699415d18c4b32acc44b2286444437d87afbaeb0cb67f3cc01aa27b.jpg",
+    "scheml_1_final/images/dd510d293f57e2af5f8ca3bd3b10f353282e59a5cd51bf051a9cefe506291841.jpg",
+    "scheml_1_final/images/deb9273db6085208830f0b5a7c6b1f5b1a2b4021dc71f338e4793be269055b7e.jpg",
+    "scheml_1_final/images/e24ab485a65d70dbd2735121e5d1e50c460c2b98efacc1ac8d3b50d528c662d5.jpg",
+    "scheml_1_final/scheme_1_algo.md"
+  ]
+}

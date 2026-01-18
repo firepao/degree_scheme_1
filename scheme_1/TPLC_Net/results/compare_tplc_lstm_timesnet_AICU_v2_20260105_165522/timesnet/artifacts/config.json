@@ -1,0 +1,21 @@
+{
+  "model_name": "timesnet",
+  "train": {
+    "epochs": 20,
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "device": "cuda",
+    "grad_clip_max_norm": 1.0,
+    "use_amp": true,
+    "lr_scheduler": "plateau",
+    "early_stop_patience": 6
+  },
+  "timesnet_arch": {
+    "d_model": 64,
+    "d_ff": 128,
+    "e_layers": 2,
+    "top_k": 3,
+    "num_kernels": 6,
+    "dropout": 0.1
+  }
+}

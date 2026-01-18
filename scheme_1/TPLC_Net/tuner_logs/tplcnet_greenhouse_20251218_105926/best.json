@@ -1,0 +1,10 @@
+{
+  "best_params": {
+    "hidden_dim": 96,
+    "top_k_periods": 4,
+    "num_scales": 3,
+    "lr": 0.001548799552404147,
+    "weight_decay": 0.0004492090462838536
+  },
+  "best_val_loss": 0.46655387701531986
+}

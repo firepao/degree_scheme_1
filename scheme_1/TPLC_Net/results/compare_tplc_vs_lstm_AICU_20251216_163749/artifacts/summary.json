@@ -1,0 +1,58 @@
+{
+  "team": "AICU",
+  "dataset_root": "D:\\degree_code\\scheme_1\\datasets\\自主温室挑战赛",
+  "seq_len": 288,
+  "pred_len": 72,
+  "stride": 1,
+  "batch_size": 8,
+  "epochs": 1,
+  "lr": 0.001,
+  "weight_decay": 0.0,
+  "device": "cuda",
+  "models": {
+    "tplcnet": {
+      "history": {
+        "train_loss": [
+          0.20526087716304633
+        ],
+        "val_loss": [
+          0.5811432856856577
+        ],
+        "val_mae": [
+          0.5660071244366001
+        ],
+        "val_rmse": [
+          0.693104626069482
+        ]
+      },
+      "metrics": {
+        "loss": 65573.14571081921,
+        "mae": 33.80185926375002,
+        "rmse": 38.02880368508343
+      },
+      "model_dir": "D:\\degree_code\\scheme_1\\TPLC_Net\\results\\compare_tplc_vs_lstm_AICU_20251216_163749\\tplcnet"
+    },
+    "lstm": {
+      "history": {
+        "train_loss": [
+          0.1946825013753007
+        ],
+        "val_loss": [
+          0.386129923062043
+        ],
+        "val_mae": [
+          0.4329366916122816
+        ],
+        "val_rmse": [
+          0.566862387682512
+        ]
+      },
+      "metrics": {
+        "loss": 2.3198406664457907,
+        "mae": 1.0872610885000706,
+        "rmse": 1.3270111051345586
+      },
+      "model_dir": "D:\\degree_code\\scheme_1\\TPLC_Net\\results\\compare_tplc_vs_lstm_AICU_20251216_163749\\lstm"
+    }
+  }
+}

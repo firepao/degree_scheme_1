@@ -1,0 +1,27 @@
+{
+  "model_name": "tplcnet",
+  "train": {
+    "epochs": 5,
+    "lr": 0.0018124282861022153,
+    "weight_decay": 0.00031782679481783595,
+    "device": "cuda"
+  },
+  "tplc_tuning": {
+    "enabled": true,
+    "tuner_dir": "D:\\degree_code\\scheme_1\\TPLC_Net\\tuner_logs\\tplcnet_tuning_AICU_20251222_130439",
+    "best_params": {
+      "hidden_dim": 32,
+      "num_scales": 3,
+      "top_k_periods": 2,
+      "lr": 0.0018124282861022153,
+      "weight_decay": 0.00031782679481783595
+    },
+    "trials": 10,
+    "trial_epochs": 2
+  },
+  "tplc_arch": {
+    "hidden_dim": 32,
+    "top_k_periods": 2,
+    "num_scales": 3
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "model_name": "tplcnet",
+  "train": {
+    "epochs": 20,
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "device": "cuda",
+    "grad_clip_max_norm": 1.0,
+    "use_amp": true,
+    "lr_scheduler": "plateau",
+    "early_stop_patience": 6
+  },
+  "tplc_tuning": {
+    "enabled": false
+  },
+  "tplc_arch": {
+    "hidden_dim": 64,
+    "top_k_periods": 3,
+    "num_scales": 2
+  }
+}

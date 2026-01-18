@@ -1,0 +1,20 @@
+{
+  "model_name": "timemixer_pp",
+  "train": {
+    "epochs": 20,
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "device": "cuda",
+    "grad_clip_max_norm": 1.0,
+    "use_amp": false,
+    "lr_scheduler": "plateau",
+    "early_stop_patience": 6
+  },
+  "timemixer_pp_arch": {
+    "d_model": 32,
+    "e_layers": 2,
+    "num_scales": 2,
+    "top_k": 3,
+    "channel_independence": false
+  }
+}

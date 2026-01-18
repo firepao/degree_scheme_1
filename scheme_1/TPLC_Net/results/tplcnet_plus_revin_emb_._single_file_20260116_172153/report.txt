@@ -1,0 +1,9 @@
+
+Experiment: tplcnet_plus_revin_emb_._single_file
+Model: TPLCNet_Improved (RevIN + Embedding)
+SeqLen: 96, PredLen: 24
+Test Metrics:
+MAE: 1.4142
+MSE: -1.0000
+RMSE: 1.7636
+MAPE: -1.0000

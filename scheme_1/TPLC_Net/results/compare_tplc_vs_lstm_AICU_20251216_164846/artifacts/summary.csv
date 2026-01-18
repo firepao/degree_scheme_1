@@ -1,0 +1,3 @@
+﻿model,loss,mae,rmse,model_dir
+lstm,1.8491084785862417,0.9859391769498703,1.213151327737877,D:\degree_code\scheme_1\TPLC_Net\results\compare_tplc_vs_lstm_AICU_20251216_164846\lstm
+tplcnet,229.1345275030712,2.6598916183290973,3.5752870428308308,D:\degree_code\scheme_1\TPLC_Net\results\compare_tplc_vs_lstm_AICU_20251216_164846\tplcnet

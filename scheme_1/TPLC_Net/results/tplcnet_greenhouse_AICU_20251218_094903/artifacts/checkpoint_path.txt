@@ -1,0 +1,1 @@
+D:\degree_code\scheme_1\TPLC_Net\results\tplcnet_greenhouse_AICU_20251218_094903\checkpoints\tplcnet_best.pt
