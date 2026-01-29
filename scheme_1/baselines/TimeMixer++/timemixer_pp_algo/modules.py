@@ -64,7 +64,8 @@ class MultiResolutionTimeImaging(nn.Module):
            amplitudes: Top-k amplitudes (for MRM weights)
         """
         B, T, D = x.shape
-        xf = torch.fft.rfft(x, dim=1)
+        # cuFFT 在半精度下仅支持 2 的幂次方维度，需要先转为 float32
+        xf = torch.fft.rfft(x.float(), dim=1)
         # 计算平均振幅以找周期
         frequency_list = abs(xf).mean(0).mean(-1)
         frequency_list[0] = 0

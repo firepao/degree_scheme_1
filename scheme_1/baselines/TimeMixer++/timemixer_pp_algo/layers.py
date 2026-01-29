@@ -204,6 +204,11 @@ class Normalize(nn.Module):
         current_affine_bias = self.affine_bias if self.affine else None
         current_last = self.last if self.subtract_last else None
         
+        # 如果 target_idx 为 None 但输出维度小于输入维度，默认取前 c_out 个特征
+        out_dim = x.shape[-1]
+        if target_idx is None and out_dim < self.num_features:
+            target_idx = list(range(out_dim))
+        
         if target_idx is not None:
             # 确保 indices 是 tensor 或 list 以进行索引
             if current_mean is not None: current_mean = current_mean[..., target_idx]

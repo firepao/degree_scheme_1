@@ -43,6 +43,9 @@ import sys
 sys.path.insert(0, str(Path(__file__).parent))
 from timemixer import TimeMixerForecaster, TimeMixerConfig
 
+# 导入特征配置
+from tplc_algo.config import TPLCConfig
+
 
 def main():
     # ========= 1) 配置 =========
@@ -99,12 +102,23 @@ def main():
 
     # ========= 2) 数据准备 =========
     print('\n准备数据...')
+    # 从 TPLCConfig 读取特征配置（与 run_compare_experiment.ipynb 保持一致）
+    selected_features = list(TPLCConfig.feature_cols) if TPLCConfig.feature_cols else None
+    target_cols_cfg = list(TPLCConfig.target_cols) if TPLCConfig.target_cols else None
+
+    if selected_features:
+        print(f'Config: 使用指定输入特征 ({len(selected_features)} 个)')
+    if target_cols_cfg:
+        print(f'Config: 预测目标变量: {target_cols_cfg}')
+
     prepared = prepare_greenhouse_datasets(
         dataset_root=dataset_root,
         team=team,
         seq_len=seq_len,
         pred_len=pred_len,
         stride=stride,
+        selected_features=selected_features,
+        target_cols=target_cols_cfg,
         missing_rate_threshold=0.7,
         drop_constant=True,
         protect_target_cols=True,

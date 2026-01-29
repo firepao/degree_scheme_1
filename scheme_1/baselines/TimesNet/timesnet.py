@@ -12,7 +12,11 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from .layers import DataEmbedding, Inception_Block_V1
+# 兼容直接运行和包导入两种方式
+try:
+    from .layers import DataEmbedding, Inception_Block_V1
+except ImportError:
+    from layers import DataEmbedding, Inception_Block_V1
 
 
 def FFT_for_Period(x: torch.Tensor, k: int = 2) -> tuple[torch.Tensor, torch.Tensor]:
